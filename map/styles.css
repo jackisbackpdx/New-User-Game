@@ -35,7 +35,7 @@ body {
 
 .quest {
     position: absolute;
-    color: red;
+    color: orange;
     text-decoration: none;
     background-color: grey;
     padding: 2px;
