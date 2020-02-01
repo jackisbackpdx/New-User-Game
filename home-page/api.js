@@ -2,8 +2,8 @@ const mtTaborPark = {
     title: 'Mt Tabor Park',
     id: 'Tabor',
     map: {
-        top: '34%',
-        left: '33%'
+        top: '55%',
+        left: '65%'
     },
     image: '',
     audio: '',
@@ -38,8 +38,8 @@ const roseFestival = {
     title: 'Rose Festival',
     id: 'rose festival',
     map: {
-        top: '40%',
-        left: '5%'
+        top: '57%',
+        left: '45%'
     },
     image: '',
     audio: '',
@@ -74,8 +74,8 @@ const blazerGame = {
     title: 'Blazer\'s Game',
     id: 'blazer\'s Game',
     map: {
-        top: '40%',
-        left: '15%'
+        top: '53%',
+        left: '50%'
     },
     image: '',
     audio: '',
@@ -106,10 +106,10 @@ const blazerGame = {
     ]
 };
 
-const choices = [
+const quests = [
     mtTaborPark,
     roseFestival,
     blazerGame
 ];
 
-export default choices;
+export default quests;

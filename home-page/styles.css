@@ -4,10 +4,16 @@
 body, html {
     height: 100%;
 }
+@keyframes word {
+    0% { background-color: green}
+    50% { background-color: red }
+    100% { background-color: green }
+}
 body {
     background: lightskyblue;
     color: white;
     font-weight: bold;
+    animation: word 2s infinite;
 }
 img {
     height: 200px;
