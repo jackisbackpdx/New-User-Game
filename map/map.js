@@ -1,9 +1,9 @@
-import loadUser from '../commons/load-user.js';
 import quests from '../home-page/api.js';
-import outOfTime from '../commons/out-of-time.js';
-import completedLink from './create-completed-links.js';
+import loadUser from '../commons/load-user.js';
 import createLink from './create-quest-links.js';
+import completedLink from './create-completed-links.js';
 import hasCompletedAllQuests from './completed-all-quests.js';
+import outOfTime from '../commons/out-of-time.js';
 import { getUser } from '../user-get-set.js';
 
 loadUser();
@@ -19,7 +19,7 @@ const nav = document.getElementById('quests');
 for (let i = 0; i < quests.length; i++) {
     let quest = quests[i];
     let questDisplay = null;
-
+    console.log(user.completed[quest.id]);
     if (user.completed[quest.id]) {
         questDisplay = completedLink(quest);
     } else {

@@ -1,34 +1,49 @@
 * {
     box-sizing: border-box;
+    border-radius: 3px;
 }
 body, html {
     height: 100%;
 }
-@keyframes word {
-    0% { background-color: green}
-    50% { background-color: red }
-    100% { background-color: green }
-}
+
 body {
-    background: lightskyblue;
-    color: white;
+    background-image: url('../assets/mt-tabor.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 10s ease-in infinite 0s;
+    animation-timing-function: ease-in-out;
+    color: black;
     font-weight: bold;
-    animation: word 2s infinite;
+}
+
+@keyframes slideBg {
+    33% {
+        background-image: url('../assets/Rose-Festival.png')
+    }
+    66% {
+        background-image: url('../assets/sellwood-park.png')
+    }
 }
 img {
     height: 200px;
     width: 200px;
     padding: 5px;
-    background-color: grey;
+    background-color: darkgreen;
 }
 .character {
     height: 220px;
     width: 220px;
-    background-color: tan;
+    background-color: green;
     margin: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.character:hover {
+    background-color: lightgreen;
+    transition-duration: 300ms;
 }
 label:hover {
     cursor: pointer;
@@ -37,7 +52,7 @@ div input {
     display: none;
 }
 input:checked + img{
-    border: 2px solid black;
+    background-color: black;
 }
 form label:first-of-type {
     margin: 3px;
@@ -96,4 +111,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#name-field {
+    background-color: silver;
+    width: 220px;
+    height: 60px;
 }

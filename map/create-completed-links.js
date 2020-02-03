@@ -3,8 +3,8 @@ function completedLink(quest) {
     span.classList.add('completed');
     span.classList.add('quest');
 
-    span.style.top = quest.style.top;
-    span.style.left = quest.style.left;
+    span.style.top = quest.map.top;
+    span.style.left = quest.map.left;
     span.textContent = quest.title;
 
     return span;
