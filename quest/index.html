@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='./styles.css'>
+</head>
+<body>
+    <div class='profile'>
+        <img id='backdrop' src=''>
+        <img id='avatar' src=''>
+        <span id='name'></span>
+        <span class='stats' id='enjoyment'>Enjoyment: </span>
+        <span class='stats' id='time'>Time: </span>
+    </div>
+
+    <main>
+        <h2 id='title'></h2>
+        <div id='img-wrapper'>
+            <img id='img' src=''>
+        </div>
+        <form id='choice-form'>
+            <p id='choices'></p>
+            <button>Choose</button>
+        </form>
+        <section id='result' class='hidden'>
+            <p id='result-description'></p>
+            <p id='points-display'></p>
+        </section>
+        <a class='hidden' href='../map'>Back To Map</a>
+    </main>
+</body>
+<script type='module' src='./quests.js'></script>
+</html>

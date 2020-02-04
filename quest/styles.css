@@ -1,0 +1,142 @@
+* {
+    border-radius: 3px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+}
+#avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    top: 12px;
+    z-index: 0;
+    box-shadow: 0 0 10px 1px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: silver;
+    width: 190px;
+    height: 185px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#name {
+    margin-top: 5px;
+}
+.stats {
+    border: 2px solid black;
+    width: 100px;
+    margin: 5px;
+    background-color: grey;
+    color: white;
+}
+#img {
+    height: 300px; 
+}
+#choices {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e8;
+    padding: 5px;
+}
+button {
+    display: block;
+    margin: 0 auto;
+}
+.hidden {
+    display: none;
+}
+label {
+    background-color: lightskyblue;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+label:hover {
+    background-color: rgb(37, 67, 235);
+    cursor: pointer;
+}
+button {
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+}
+button:hover{
+    transition-duration: 300ms;
+    background-color: rgb(37, 67, 235);
+    box-shadow: .5px .5px .5px rgb(37, 67, 235), -.5px -.5px .5px rgb(37, 67, 235);
+    cursor: pointer;
+}
+#choices {
+    background-color: grey;
+    height: 200px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#img-wrapper {
+    width: 600px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+}
+#result {
+    background-color: grey;
+    width: 600px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+a {
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+a:hover{
+    transition-duration: 300ms;
+    background-color: rgb(37, 67, 235);
+    box-shadow: .5px .5px .5px rgb(37, 67, 235), -.5px -.5px .5px rgb(37, 67, 235);;
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+input:checked + span {
+    background-color: white;
+}
+label span {
+    width: 98.68%;
+    height: 100%;
+    display: inline-block;
+    padding: 2px;
+    border-left: 4px solid blue;
+}
