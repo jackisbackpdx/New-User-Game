@@ -2,8 +2,8 @@ const mtTaborPark = {
     title: 'Mt Tabor Park',
     id: 'Tabor',
     map: {
-        top: '55%',
-        left: '65%'
+        top: '65%',
+        left: '55%'
     },
     image: '../assets/mt-tabor.png',
     audio: '',
@@ -70,7 +70,7 @@ const roseFestival = {
     ]
 };
 
-const blazerGame = {
+const SellWood = {
     title: 'Sellwood Park',
     id: 'Sellwood Park',
     map: {
@@ -109,7 +109,7 @@ const blazerGame = {
 const quests = [
     mtTaborPark,
     roseFestival,
-    blazerGame
+    SellWood
 ];
 
 export default quests;

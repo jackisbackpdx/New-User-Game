@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: burlywood;
 }
 
 #quests {
@@ -9,7 +10,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 600px;
-    height: 500px;
+    height: 600px;
 }
 
 #avatar {
@@ -26,11 +27,33 @@ body {
     width: 110px;
     z-index: 1;
 }
-
+#avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    top: 12px;
+    z-index: 0;
+    box-shadow: 0 0 10px 1px;
+}
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: silver;
+    width: 190px;
+    height: 195px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+#name {
+    margin-top: 5px;
+}
+.stats {
+    border: 2px solid black;
+    width: 100px;
+    margin: 5px;
+    background-color: grey;
+    color: white;
 }
 
 .quest {
@@ -42,4 +65,7 @@ body {
 }
 .completed {
     color: white;
+}
+.completed:after {
+    content: '✔';
 }

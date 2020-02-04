@@ -1,3 +1,6 @@
+* {
+    border-radius: 3px;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -20,7 +23,7 @@ body {
     width: 190px;
     height: 185px;
     padding: 10px;
-    border-radius: 3px;
+    margin-bottom: 5px;
 }
 #name {
     margin-top: 5px;
@@ -43,6 +46,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #e8e8e8;
+    padding: 5px;
 }
 button {
     display: block;
@@ -52,10 +57,13 @@ button {
     display: none;
 }
 label {
-    background-color: silver;
-    margin: 2px;
+    background-color: lightskyblue;
     font-weight: bold;
-    border-radius: 3px;
+    padding-bottom: 4px;
+}
+label:hover {
+    background-color: rgb(37, 67, 235);
+    cursor: pointer;
 }
 button {
     background-color: blue;
@@ -81,5 +89,54 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 3px;
+}
+#img-wrapper {
+    width: 600px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+}
+#result {
+    background-color: grey;
+    width: 600px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+a {
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+a:hover{
+    transition-duration: 300ms;
+    background-color: rgb(37, 67, 235);
+    box-shadow: .5px .5px .5px rgb(37, 67, 235), -.5px -.5px .5px rgb(37, 67, 235);;
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+input:checked + span {
+    background-color: white;
+}
+label span {
+    width: 98.68%;
+    height: 100%;
+    display: inline-block;
+    padding: 2px;
+    border-left: 4px solid blue;
 }

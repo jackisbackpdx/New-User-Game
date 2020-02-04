@@ -83,7 +83,6 @@ h2, h1 {
     justify-content: space-around;
     width: 90%;
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -116,4 +115,8 @@ header {
     background-color: silver;
     width: 220px;
     height: 60px;
+}
+#name-input {
+    text-align: center;
+    font-style: oblique;
 }

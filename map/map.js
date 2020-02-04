@@ -19,7 +19,6 @@ const nav = document.getElementById('quests');
 for (let i = 0; i < quests.length; i++) {
     let quest = quests[i];
     let questDisplay = null;
-    console.log(user.completed[quest.id]);
     if (user.completed[quest.id]) {
         questDisplay = completedLink(quest);
     } else {
