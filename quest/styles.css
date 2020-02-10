@@ -140,3 +140,13 @@ label span {
     padding: 2px;
     border-left: 4px solid blue;
 }
+#result {
+    margin-top: 10px;
+    padding: 2px;
+    text-align: center;
+}
+#result-description {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+}

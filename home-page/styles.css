@@ -12,17 +12,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 10s ease-in infinite 0s;
+    animation: slideBg 20s ease-in infinite 0s;
     animation-timing-function: ease-in-out;
     color: black;
     font-weight: bold;
 }
 
 @keyframes slideBg {
+    22% {
+        background-image: url('../assets/mt-tabor.png');
+    }
     33% {
+        background-image: url('../assets/Rose-Festival.png');
+    }
+    55% {
         background-image: url('../assets/Rose-Festival.png')
     }
     66% {
+        background-image: url('../assets/sellwood-park.png')
+    }
+    88% {
         background-image: url('../assets/sellwood-park.png')
     }
 }
