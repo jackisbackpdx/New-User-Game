@@ -1,7 +1,7 @@
 export const scoreEnjoyment = (enjoyment) => {
-    if (enjoyment > 70) {
+    if (enjoyment >= 60) {
         return 'fun';
-    } else if (enjoyment <= 70 && enjoyment >= 30) {
+    } else if (enjoyment < 60 && enjoyment >= 30) {
         return 'okay';
     } else {
         return 'boring';

@@ -12,14 +12,14 @@ const user = getUser();
 
 const timeResult = scoreTime(user.time);
 const enjoyment = scoreEnjoyment(user.enjoyment);
-const timeMessage = hasTime[enjoyment];
+const timeMessage = hasTimeMessage[timeResult];
 
 let enjoymentMessages = null;
 
 if (timeResult === 'none') {
     enjoymentMessages = outOfTime;
 } else {
-    enjoymentMessages = hasTimeMessage;
+    enjoymentMessages = hasTime;
 }
 
 const enjoymentMessage = enjoymentMessages[enjoyment];

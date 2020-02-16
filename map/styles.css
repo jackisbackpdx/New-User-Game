@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: burlywood;
+    background-color: green;
 }
 
 #quests {
@@ -58,13 +58,13 @@ body {
 
 .quest {
     position: absolute;
-    color: red;
+    color: white;
     text-decoration: none;
-    background-color: grey;
+    background-color: black;
     padding: 2px;
 }
 .completed {
-    color: white;
+    color: yellow;
 }
 .completed:after {
     content: '✔';
